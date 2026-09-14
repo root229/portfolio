@@ -1,0 +1,111 @@
+/* Portfolio – einfaches Stylesheet */
+
+:root {
+  --bg: #ffeeda;
+  --text: #2b2b2b;
+  --text-light: #666;
+  --accent: #e0703f;
+  --border: #e2d8ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0 0 0.3rem;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0 0 1rem;
+  color: var(--text-light);
+}
+
+nav a {
+  margin-right: 1.2rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.project {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project p {
+  margin: 0;
+  color: var(--text-light);
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 0.6rem;
+  margin-top: 1rem;
+  max-width: 400px;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--border);
+  border-radius: 4px;
+}
+
+img.thumb {
+  object-fit: cover;
+}
+
+#kontakt {
+  padding-top: 1rem;
+}
+
+#kontakt a {
+  color: var(--accent);
+}
+
+footer {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
